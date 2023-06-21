@@ -22,6 +22,7 @@ ax.set_xticklabels(['Eager', 'Single Lazy\n(1ms)', 'Single Lazy\n(10ms)', 'Multi
 ax.set_ylabel('Milliseconds (ms)')
 ax.set_title('1 Millisecond Delay 5K Writes')
 
+plt.savefig("plot1.png")
 plt.show()
 
 fig2, ax2 = plt.subplots()
@@ -38,6 +39,7 @@ ax2.set_xticklabels(['Eager', 'Single Lazy\n(1ms)', 'Single Lazy\n(10ms)', 'Mult
 ax2.set_ylabel('Milliseconds (ms)')
 ax2.set_title('0 Millisecond Delay 5K Writes')
 
+plt.savefig("plot2.png")
 plt.show()
 
 fig3, ax3 = plt.subplots()
@@ -55,4 +57,5 @@ ax3.set_xticklabels(['Eager (100 Max\n Concurrent)', 'Single Lazy\n(1ms)', 'Sing
 ax3.set_ylabel('Milliseconds (ms)')
 ax3.set_title('0 Millisecond Delay 5K Writes')
 
+plt.savefig("plot3.png")
 plt.show()
